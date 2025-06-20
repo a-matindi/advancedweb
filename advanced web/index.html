@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Animator & 3D Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffd5;
+      z-index: 1;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      z-index: 1;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    nav a {
+      color: #00ffd5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background-color: #1c1c1c;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 255, 213, 0.1);
+    }
+    .project img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .project h3 {
+      margin: 0.5rem 0;
+      color: #00ffd5;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #00ffd5;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>Matindi Githinji</h1>
+    <p>Animator | 3D Graphics Creator</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate animator and 3D artist with over 5 years of experience in creating visually stunning animations, realistic environments, and engaging digital content. I specialize in using Blender and Houdini to bring ideas to life with motion and creativity.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio">
+      <div class="project">
+        <a href="video.html"> <h3>Abstract Graphics</h3> </a>
+        
+        <p>An Abstract wavycurves transmitting light energy. Made in Blender</p>
+
+      </div>
+      <div class="project 2">
+        <a href="coffeevideo.html"> <h3>Product animation</h3> </a>
+        
+        <p>An abstract advertisment of roasted coffee.</p>
+      </div>
+
+      <div class="project">
+        <a href="char.html"> <h3>Character animation</h3> </a>
+        
+        <p>High-impact visual effects reel showcasing simulation and compositing work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email me at <a href="mailto:matindi.f.wc@gmail.com">matindi.f.wc@gmail.com</a> or connect with me on <a href="https://www.linkedin.com">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Matindi Githinji. All rights reserved.</p>
+  </footer>
+</body>
+</html>
